@@ -32,7 +32,7 @@ jobs:
           node-version: '22'
       - name: Install dev tooling
         working-directory: typescript
-        run: npm install --no-save typescript decimal.js @types/node
+        run: npm install --no-save typescript@5.5.4 decimal.js @types/node@22
       - name: Compile and run TypeScript verification
         working-directory: typescript
         run: |

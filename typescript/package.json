@@ -1,8 +1,7 @@
 {
   "name": "delta-code-examples-typescript",
   "version": "1.0.0",
-  "description": "Delta: Closing the Specification Gap \u2014 TypeScript companion examples (Money, Result).",
-  "type": "module",
+  "description": "Delta: Closing the Specification Gap — TypeScript companion examples (Money, Result).",
   "scripts": {
     "build": "tsc -p .",
     "test": "npm run build && node dist/tests/money.test.js"
@@ -11,7 +10,7 @@
     "decimal.js": "^10.4.3"
   },
   "devDependencies": {
-    "typescript": "^5.4.0",
+    "typescript": "5.5.4",
     "@types/node": "^22.0.0"
   },
   "license": "MIT"

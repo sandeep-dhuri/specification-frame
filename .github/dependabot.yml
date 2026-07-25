@@ -1,0 +1,13 @@
+# Keeps the repo's limited dependencies and CI actions current.
+# The examples are intentionally version-pinned in code (see the book, Ch 11);
+# this watches the dev/CI tooling, not the pinned teaching versions.
+version: 2
+updates:
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "monthly"
+  - package-ecosystem: "npm"
+    directory: "/typescript"
+    schedule:
+      interval: "monthly"

@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "If you use the Specification Frame, the Ten Laws, or the code in this repository, please cite the book below."
+title: "specification-frame — companion code for Delta: Closing the Specification Gap"
+authors:
+  - family-names: Dhuri
+    given-names: Sandeep
+    orcid: "https://orcid.org/0009-0008-1829-2431"
+license: MIT
+repository-code: "https://github.com/sandeep-dhuri/specification-frame"
+url: "https://acuity.press"
+version: 1.0.0
+preferred-citation:
+  type: book
+  title: "Delta: Closing the Specification Gap: A Prompt Engineering Framework for Enterprise Software Teams"
+  authors:
+    - family-names: Dhuri
+      given-names: Sandeep
+      orcid: "https://orcid.org/0009-0008-1829-2431"
+  publisher:
+    name: Acuity Press
+  year: 2026
+  isbn: "979-8-9964807-1-5"
+  url: "https://acuity.press"
+  # doi: 10.5281/zenodo.XXXXXXX   # uncomment and fill in after the Zenodo upload mints the DOI

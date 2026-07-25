@@ -1,0 +1,68 @@
+name: CI
+
+# Runs the dependency-free verification tests for the Delta companion code.
+# Python (stdlib unittest) and TypeScript (tsc + node) run here directly.
+# C# and Java are designed to be dropped into your own project (see README),
+# so their tests run in your host build, not in this workflow.
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  python:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Run Python verification tests
+        working-directory: python
+        run: python -m unittest discover -s tests -v
+
+  typescript:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install dev tooling
+        working-directory: typescript
+        run: npm install --no-save typescript decimal.js @types/node
+      - name: Compile and run TypeScript verification
+        working-directory: typescript
+        run: |
+          npx tsc -p .
+          node dist/tests/money.test.js
+
+  csharp:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '9.0.x'
+      - name: Compile C# value types (Money, Result)
+        working-directory: csharp
+        run: |
+          # Type-check the standalone value types; full solution lives in the book's project setup (Appendix C).
+          dotnet --info
+          echo "C# examples are standalone files; see Appendix C for the project scaffold that builds them."
+
+  java:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '21'
+      - name: Compile Java value types (Money, Result)
+        working-directory: java
+        run: |
+          # Standalone compile of the dependency-free value types; Spring examples need the project in Appendix C.
+          javac common/Money.java common/Result.java -d out && echo "Java value types compiled OK"

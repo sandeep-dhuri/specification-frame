@@ -1,0 +1,9 @@
+# Build artifacts
+bin/
+obj/
+dist/
+build/
+node_modules/
+__pycache__/
+*.pyc
+*.class

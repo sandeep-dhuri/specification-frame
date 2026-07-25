@@ -28,8 +28,15 @@ export class Money {
         `Use string: Money.of("${amount.toFixed(2)}", "${currency}")`
       );
     }
-    // Reject NaN / Infinity / non-numeric strings before they poison arithmetic.
-    const probe = new Decimal(amount);
+    // Reject NaN / Infinity / empty / non-numeric strings before they poison arithmetic.
+    let probe: Decimal;
+    try {
+      probe = new Decimal(amount);
+    } catch {
+      throw new RangeError(
+        `amount must be a finite number (received ${String(amount)})`
+      );
+    }
     if (!probe.isFinite()) {
       throw new RangeError(
         `amount must be a finite number (received ${String(amount)})`

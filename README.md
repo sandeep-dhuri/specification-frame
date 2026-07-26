@@ -47,7 +47,7 @@ The **C#** and **Java** sources are designed to be dropped into your own project
 | `typescript/` | TypeScript — `Money` (Decimal.js), `Result` | App K |
 | `prompts/` | `.md` prompt files with YAML frontmatter | Ch 11 |
 | `claude_md/` | CLAUDE.md templates for Claude Code | Ch 13 |
-| `docs/` | Ten Laws quick-reference card | App A |
+| `docs/` | Ten Laws quick-reference card | Chs 1–17 |
 
 ---
 

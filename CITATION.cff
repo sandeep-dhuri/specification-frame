@@ -9,6 +9,10 @@ license: MIT
 repository-code: "https://github.com/sandeep-dhuri/specification-frame"
 url: "https://acuity.press"
 version: 1.0.0
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.21584309"
+    description: "The book on Zenodo"
 preferred-citation:
   type: book
   title: "Delta: Closing the Specification Gap: A Prompt Engineering Framework for Enterprise Software Teams"
@@ -20,5 +24,5 @@ preferred-citation:
     name: Acuity Press
   year: 2026
   isbn: "979-8-9964807-1-5"
+  doi: "10.5281/zenodo.21584309"
   url: "https://acuity.press"
-  # doi: 10.5281/zenodo.XXXXXXX   # uncomment and fill in after the Zenodo upload mints the DOI

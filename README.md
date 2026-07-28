@@ -1,5 +1,7 @@
 # Delta: Closing the Specification Gap — Code Repository
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21584309.svg)](https://doi.org/10.5281/zenodo.21584309)
+
 Companion repository for *Delta: Closing the Specification Gap* by Sandeep Dhuri (Acuity Press, 2026).
 
 All compilable code examples, prompt templates, and CLAUDE.md configuration files from the book.

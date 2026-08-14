@@ -4,6 +4,8 @@ Companion repository for *Delta: Closing the Specification Gap* by Sandeep Dhuri
 
 All compilable code examples, prompt templates, and CLAUDE.md configuration files from the book.
 
+**Field articles from the book:** [acuity.press/writing](https://acuity.press/writing)
+
 ---
 
 [![CI](https://github.com/sandeep-dhuri/specification-frame/actions/workflows/ci.yml/badge.svg)](https://github.com/sandeep-dhuri/specification-frame/actions/workflows/ci.yml)
@@ -62,6 +64,10 @@ Copy these two files into your project first. They underpin every recipe in the 
 **Python:** `python/common/result.py`, `python/common/money.py`
 
 **TypeScript:** `typescript/common/result.ts`, `typescript/common/money.ts`
+
+## The SPEC.md starter
+
+Copy [`SPEC.md`](SPEC.md) into your repo next to your `AGENTS.md` — a fill-in-the-blanks Specification Frame template. CC BY 4.0.
 
 ---
 
@@ -269,13 +275,8 @@ You are free to use, modify, and redistribute the code for any purpose. Attribut
 
 > *Adapted from* Delta: Closing the Specification Gap *by Sandeep Dhuri (2026).*
 
-Found an error? [Open an issue](../../issues) or email [errata@acuity.press].
+Found an error? [Open an issue](../../issues) or email [errata@acuity.press](mailto:errata@acuity.press).
 
 ---
 
 *Sandeep Dhuri · 2026*
-
-
-## The SPEC.md starter
-
-Copy [`SPEC.md`](SPEC.md) into your repo next to your `AGENTS.md` — a fill-in-the-blanks Specification Frame template. CC BY 4.0.

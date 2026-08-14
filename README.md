@@ -273,7 +273,7 @@ Found an error? [Open an issue](../../issues) or email [errata@acuity.press].
 
 ---
 
-*Sandeep Dhuri · Sandeep Dhuri · 2026*
+*Sandeep Dhuri · 2026*
 
 
 ## The SPEC.md starter

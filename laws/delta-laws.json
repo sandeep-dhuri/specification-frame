@@ -1,0 +1,238 @@
+{
+ "ruleset": "delta-laws",
+ "version": "0.3.0",
+ "source": {
+  "title": "Delta: Closing the Specification Gap",
+  "author": "Sandeep Dhuri",
+  "doi": "10.5281/zenodo.21584309",
+  "url": "https://acuity.press/delta",
+  "license": "MIT (ruleset). Book text CC BY-NC-ND 4.0."
+ },
+ "notes": "v0.3 statements are the constraint sentences of FRAME_FILLED.md (validation study instrument) and the nine CWE-mapped failure classes of CHECKER_VALIDITY.md, per the Sep 13 instruction. L9 and L10 come from the Frame's boundary and logging rules and are not machine-checked by the nine study checkers. Law names are working names; the author may replace them with the book's canonical wording without changing statements.",
+ "laws": [
+  {
+   "id": "DELTA-L1",
+   "number": 1,
+   "name": "Money is exact",
+   "statement": "Money arithmetic in decimal.Decimal or integer cents. Round half up only at the final step. Never compare money with floating-point equality.",
+   "rationale": "Binary floating point cannot represent most decimal amounts, so drift accumulates and reconciliation fails by cents.",
+   "related_cwe": [
+    "CWE-682",
+    "CWE-697"
+   ],
+   "machine_checkable": true,
+   "violation_example": {
+    "python": "total = price * 1.07\nif total == expected: ..."
+   },
+   "compliant_example": {
+    "python": "from decimal import Decimal, ROUND_HALF_UP\ntotal = (price * Decimal('1.07')).quantize(Decimal('0.01'), rounding=ROUND_HALF_UP)"
+   },
+   "tags": [
+    "money",
+    "exactness",
+    "checker:money_float",
+    "checker:exact_compare"
+   ],
+   "status": "specified"
+  },
+  {
+   "id": "DELTA-L2",
+   "number": 2,
+   "name": "Time carries its zone",
+   "statement": "All datetimes are timezone-aware UTC. Naive datetimes are forbidden.",
+   "rationale": "Naive timestamps in business logic silently shift across zones and daylight-saving boundaries.",
+   "related_cwe": [
+    "CWE-1339"
+   ],
+   "machine_checkable": true,
+   "violation_example": {
+    "python": "now = datetime.now()"
+   },
+   "compliant_example": {
+    "python": "now = datetime.now(timezone.utc)"
+   },
+   "tags": [
+    "datetime",
+    "checker:naive_datetime"
+   ],
+   "status": "specified"
+  },
+  {
+   "id": "DELTA-L3",
+   "number": 3,
+   "name": "Retries are idempotent",
+   "statement": "Any handler that can be retried (webhooks, payment calls) is idempotent: it requires and checks a caller-supplied idempotency key before applying effects.",
+   "rationale": "Retried side effects without deduplication double-charge, double-ship, and double-notify.",
+   "related_cwe": [],
+   "machine_checkable": true,
+   "violation_example": {
+    "python": "def on_webhook(event):\n    charge(event['amount'])"
+   },
+   "compliant_example": {
+    "python": "def on_webhook(event, idempotency_key):\n    if store.seen(idempotency_key): return\n    charge(event['amount']); store.mark(idempotency_key)"
+   },
+   "tags": [
+    "idempotency",
+    "retries",
+    "checker:idempotency_key"
+   ],
+   "status": "specified"
+  },
+  {
+   "id": "DELTA-L4",
+   "number": 4,
+   "name": "Queries are parameterized",
+   "statement": "SQL only through parameterized placeholders. String-built queries are forbidden.",
+   "rationale": "String-built SQL that reaches execute is injectable regardless of how the input was validated upstream.",
+   "related_cwe": [
+    "CWE-89"
+   ],
+   "machine_checkable": true,
+   "violation_example": {
+    "python": "cur.execute(f\"SELECT * FROM users WHERE email='{email}'\")"
+   },
+   "compliant_example": {
+    "python": "cur.execute(\"SELECT * FROM users WHERE email=%s\", (email,))"
+   },
+   "tags": [
+    "sql",
+    "injection",
+    "checker:sql_param"
+   ],
+   "status": "specified"
+  },
+  {
+   "id": "DELTA-L5",
+   "number": 5,
+   "name": "Secrets come from the environment",
+   "statement": "Credentials and API keys come only from environment variables. Never a literal in source, never logged.",
+   "rationale": "Literal credentials in source leak through version control, logs, and error messages.",
+   "related_cwe": [
+    "CWE-798"
+   ],
+   "machine_checkable": true,
+   "violation_example": {
+    "python": "API_KEY = 'sk-live-...'"
+   },
+   "compliant_example": {
+    "python": "API_KEY = os.environ['PAYMENTS_API_KEY']"
+   },
+   "tags": [
+    "secrets",
+    "checker:hardcoded_secret"
+   ],
+   "status": "specified"
+  },
+  {
+   "id": "DELTA-L6",
+   "number": 6,
+   "name": "Passwords are slow salted hashes",
+   "statement": "Passwords are stored only as salted, slow hashes (for example hashlib.scrypt or pbkdf2_hmac with high iterations). Never plaintext, never fast unsalted digests.",
+   "rationale": "Fast unsalted digests are reversible at scale with commodity hardware.",
+   "related_cwe": [
+    "CWE-916",
+    "CWE-328"
+   ],
+   "machine_checkable": true,
+   "violation_example": {
+    "python": "stored = hashlib.md5(password.encode()).hexdigest()"
+   },
+   "compliant_example": {
+    "python": "stored = hashlib.scrypt(password.encode(), salt=salt, n=2**14, r=8, p=1)"
+   },
+   "tags": [
+    "authentication",
+    "checker:password_hash"
+   ],
+   "status": "specified"
+  },
+  {
+   "id": "DELTA-L7",
+   "number": 7,
+   "name": "Redirects are allow-listed",
+   "statement": "Redirect targets are validated against an allow-list of known paths or hosts. Never redirect to raw user input.",
+   "rationale": "Open redirects turn a trusted domain into a phishing launcher.",
+   "related_cwe": [
+    "CWE-601"
+   ],
+   "machine_checkable": true,
+   "violation_example": {
+    "python": "return redirect(request.args['next'])"
+   },
+   "compliant_example": {
+    "python": "target = request.args.get('next', '/')\nreturn redirect(target if target in ALLOWED_PATHS else '/')"
+   },
+   "tags": [
+    "redirect",
+    "checker:open_redirect"
+   ],
+   "status": "specified"
+  },
+  {
+   "id": "DELTA-L8",
+   "number": 8,
+   "name": "Paths stay inside the base",
+   "statement": "File paths built from user input are resolved and confirmed to remain inside the intended base directory before use.",
+   "rationale": "Unresolved joins with user input escape the intended directory with a handful of dots.",
+   "related_cwe": [
+    "CWE-22"
+   ],
+   "machine_checkable": true,
+   "violation_example": {
+    "python": "open(os.path.join(BASE, request.args['name']))"
+   },
+   "compliant_example": {
+    "python": "p = (BASE / name).resolve()\nif BASE not in p.parents: raise ValueError('outside base')"
+   },
+   "tags": [
+    "filesystem",
+    "checker:path_traversal"
+   ],
+   "status": "specified"
+  },
+  {
+   "id": "DELTA-L9",
+   "number": 9,
+   "name": "Validate at the boundary, fail closed",
+   "statement": "Validate inputs at the boundary. On invalid input, fail closed with a clear error.",
+   "rationale": "Inputs that pass the boundary unvalidated become every downstream defect at once.",
+   "related_cwe": [
+    "CWE-20"
+   ],
+   "machine_checkable": false,
+   "violation_example": {
+    "python": "amount = float(request.json['amount'])  # accepts NaN, negatives, strings"
+   },
+   "compliant_example": {
+    "python": "amount = parse_money(request.json.get('amount'))  # raises on anything but a valid non-negative decimal string"
+   },
+   "tags": [
+    "validation",
+    "boundary"
+   ],
+   "status": "specified"
+  },
+  {
+   "id": "DELTA-L10",
+   "number": 10,
+   "name": "Never log what must not leak",
+   "statement": "Never log secrets, PII, PHI, or full card numbers.",
+   "rationale": "Logs outlive the request, travel to third parties, and are the first thing an attacker reads.",
+   "related_cwe": [
+    "CWE-532"
+   ],
+   "machine_checkable": false,
+   "violation_example": {
+    "python": "log.info('card %s charged', card_number)"
+   },
+   "compliant_example": {
+    "python": "log.info('card ending %s charged', card_number[-4:])"
+   },
+   "tags": [
+    "logging",
+    "privacy"
+   ],
+   "status": "specified"
+  }
+ ]
+}

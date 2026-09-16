@@ -1,5 +1,10 @@
 # Delta: Closing the Specification Gap — Code Repository
 
+**The measured evidence for spec-driven development.** A pre-registered, five-model paired test of a one-page specification frame on AI-generated code: findings fell from 148 to 23, every model improved, none regressed. All 500 outputs public: [doi.org/10.5281/zenodo.22598205](https://doi.org/10.5281/zenodo.22598205) · [Hugging Face mirror](https://huggingface.co/datasets/sandeepdhuriauthor/delta-frame-validation-study) · [The Specification Frame](https://acuity.press/specification-frame.html) · [The ten laws](https://acuity.press/laws/)
+
+![148 findings bare, 23 with the Frame](readme_hero.png)
+
+
 Companion repository for *Delta: Closing the Specification Gap* by Sandeep Dhuri (Acuity Press, 2026).
 
 All compilable code examples, prompt templates, and CLAUDE.md configuration files from the book.

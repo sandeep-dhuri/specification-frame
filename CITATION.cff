@@ -1,28 +1,39 @@
+# CITATION.cff for the Delta companion repository. Drop at the repository root.
+# GitHub shows a "Cite this repository" button when this file is present.
 cff-version: 1.2.0
-message: "If you use the Specification Frame, the Ten Laws, or the code in this repository, please cite the book below."
-title: "specification-frame — companion code for Delta: Closing the Specification Gap"
+message: "If you use this repository, please cite the dataset and the book below."
+type: software
+title: "Delta Specification Frame: harness, checkers, and validation study"
 authors:
   - family-names: Dhuri
     given-names: Sandeep
     orcid: "https://orcid.org/0009-0008-1829-2431"
-license: MIT
+version: "1.1.0"
+date-released: "2026-09-15"
 repository-code: "https://github.com/sandeep-dhuri/specification-frame"
-url: "https://acuity.press"
-version: 1.0.0
-identifiers:
-  - type: doi
-    value: "10.5281/zenodo.21584309"
-    description: "The book on Zenodo"
+license: MIT
+keywords:
+  - specification
+  - prompt engineering
+  - LLM code generation
+  - software security
+  - pre-registered study
 preferred-citation:
-  type: book
-  title: "Delta: Closing the Specification Gap: A Prompt Engineering Framework for Enterprise Software Teams"
+  type: dataset
+  title: "Delta Frame Validation Study: complete results dataset (500 generations, 5 model families, pre-registered paired evaluation)"
   authors:
     - family-names: Dhuri
       given-names: Sandeep
       orcid: "https://orcid.org/0009-0008-1829-2431"
-  publisher:
-    name: Acuity Press
+  doi: "10.5281/zenodo.22598205"
   year: 2026
-  isbn: "979-8-9964807-1-5"
-  doi: "10.5281/zenodo.21584309"
-  url: "https://acuity.press"
+  publisher: Zenodo
+references:
+  - type: book
+    title: "Delta: Closing the Specification Gap"
+    authors:
+      - family-names: Dhuri
+        given-names: Sandeep
+    publisher: Acuity Press
+    year: 2026
+    doi: "10.5281/zenodo.21584309"

@@ -12,7 +12,7 @@ Rationale: Binary floating point cannot represent most decimal amounts, so drift
 
 ### 2. Time carries its zone
 All datetimes are timezone-aware UTC. Naive datetimes are forbidden.
-Rationale: Naive timestamps in business logic silently shift across zones and daylight-saving boundaries. (CWE-1339. Machine-checkable: yes)
+Rationale: Naive timestamps in business logic silently shift across zones and daylight-saving boundaries. (no single CWE, closest CWE-682. Machine-checkable: yes)
 
 ### 3. Retries are idempotent
 Any handler that can be retried (webhooks, payment calls) is idempotent: it requires and checks a caller-supplied idempotency key before applying effects.

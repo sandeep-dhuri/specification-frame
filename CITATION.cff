@@ -1,15 +1,15 @@
 # CITATION.cff for the Delta companion repository. Drop at the repository root.
 # GitHub shows a "Cite this repository" button when this file is present.
 cff-version: 1.2.0
-message: "If you use this repository, please cite the dataset and the book below."
+message: "If you use this repository, please cite the paper and the dataset below."
 type: software
 title: "Delta Specification Frame: harness, checkers, and validation study"
 authors:
   - family-names: Dhuri
     given-names: Sandeep
     orcid: "https://orcid.org/0009-0008-1829-2431"
-version: "1.1.0"
-date-released: "2026-09-15"
+version: "1.1.1"
+date-released: "2026-10-12"
 repository-code: "https://github.com/sandeep-dhuri/specification-frame"
 license: MIT
 keywords:
@@ -19,21 +19,34 @@ keywords:
   - software security
   - pre-registered study
 preferred-citation:
-  type: dataset
-  title: "Delta Frame Validation Study: complete results dataset (500 generations, 5 model families, pre-registered paired evaluation)"
+  type: article
+  title: "Specification Before Generation: A Pre-Registered, Five-Model Paired Evaluation of a Specification Frame for LLM-Generated Code in Money, Time, Idempotency, and Access Tasks"
   authors:
     - family-names: Dhuri
       given-names: Sandeep
       orcid: "https://orcid.org/0009-0008-1829-2431"
-  doi: "10.5281/zenodo.22598205"
   year: 2026
-  publisher: Zenodo
+  doi: "10.5281/zenodo.22830262"
+  identifiers:
+    - type: other
+      value: "arXiv:2609.23270"
+      description: "arXiv preprint"
 references:
+  - type: data
+    title: "Delta Frame Validation Study: complete results dataset (500 generations, 5 model families, pre-registered paired evaluation)"
+    authors:
+      - family-names: Dhuri
+        given-names: Sandeep
+    year: 2026
+    publisher:
+      name: Zenodo
+    doi: "10.5281/zenodo.22598204"
   - type: book
     title: "Delta: Closing the Specification Gap"
     authors:
       - family-names: Dhuri
         given-names: Sandeep
-    publisher: Acuity Press
+    publisher:
+      name: Acuity Press
     year: 2026
     doi: "10.5281/zenodo.21584309"

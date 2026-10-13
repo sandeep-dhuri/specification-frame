@@ -1,0 +1,672 @@
+{
+ "generated": "2026-10-06",
+ "source": "Delta Frame Validation Study dataset v1.1 (10.5281/zenodo.22850887), results/raw",
+ "files": {
+  "anthropic_claude-sonnet-5/AU01_A.py": [],
+  "anthropic_claude-sonnet-5/AU01_B.py": [],
+  "anthropic_claude-sonnet-5/AU02_A.py": [],
+  "anthropic_claude-sonnet-5/AU02_B.py": [],
+  "anthropic_claude-sonnet-5/AU03_A.py": [
+   "fastapi",
+   "starlette",
+   "uvicorn"
+  ],
+  "anthropic_claude-sonnet-5/AU03_B.py": [],
+  "anthropic_claude-sonnet-5/AU04_A.py": [
+   "flask"
+  ],
+  "anthropic_claude-sonnet-5/AU04_B.py": [],
+  "anthropic_claude-sonnet-5/AU05_A.py": [],
+  "anthropic_claude-sonnet-5/AU05_B.py": [],
+  "anthropic_claude-sonnet-5/AU06_A.py": [
+   "flask",
+   "werkzeug"
+  ],
+  "anthropic_claude-sonnet-5/AU06_B.py": [],
+  "anthropic_claude-sonnet-5/AU07_A.py": [
+   "flask"
+  ],
+  "anthropic_claude-sonnet-5/AU07_B.py": [],
+  "anthropic_claude-sonnet-5/AU08_A.py": [
+   "flask"
+  ],
+  "anthropic_claude-sonnet-5/AU08_B.py": [],
+  "anthropic_claude-sonnet-5/AU09_A.py": [
+   "flask",
+   "werkzeug"
+  ],
+  "anthropic_claude-sonnet-5/AU09_B.py": [],
+  "anthropic_claude-sonnet-5/AU10_A.py": [
+   "bcrypt"
+  ],
+  "anthropic_claude-sonnet-5/AU10_B.py": [],
+  "anthropic_claude-sonnet-5/AU11_A.py": [],
+  "anthropic_claude-sonnet-5/AU11_B.py": [],
+  "anthropic_claude-sonnet-5/AU12_A.py": [
+   "flask",
+   "flask_login",
+   "flask_sqlalchemy",
+   "werkzeug"
+  ],
+  "anthropic_claude-sonnet-5/AU12_B.py": [],
+  "anthropic_claude-sonnet-5/AU13_A.py": [
+   "flask",
+   "werkzeug"
+  ],
+  "anthropic_claude-sonnet-5/AU13_B.py": [],
+  "anthropic_claude-sonnet-5/AU14_A.py": [],
+  "anthropic_claude-sonnet-5/AU14_B.py": [],
+  "anthropic_claude-sonnet-5/DA01_A.py": [],
+  "anthropic_claude-sonnet-5/DA01_B.py": [],
+  "anthropic_claude-sonnet-5/DA02_A.py": [],
+  "anthropic_claude-sonnet-5/DA02_B.py": [],
+  "anthropic_claude-sonnet-5/DA03_A.py": [],
+  "anthropic_claude-sonnet-5/DA03_B.py": [],
+  "anthropic_claude-sonnet-5/DA04_A.py": [],
+  "anthropic_claude-sonnet-5/DA04_B.py": [],
+  "anthropic_claude-sonnet-5/DA05_A.py": [],
+  "anthropic_claude-sonnet-5/DA05_B.py": [],
+  "anthropic_claude-sonnet-5/DA06_A.py": [],
+  "anthropic_claude-sonnet-5/DA06_B.py": [],
+  "anthropic_claude-sonnet-5/DA07_A.py": [],
+  "anthropic_claude-sonnet-5/DA07_B.py": [],
+  "anthropic_claude-sonnet-5/DA08_A.py": [],
+  "anthropic_claude-sonnet-5/DA08_B.py": [],
+  "anthropic_claude-sonnet-5/DA09_A.py": [],
+  "anthropic_claude-sonnet-5/DA09_B.py": [],
+  "anthropic_claude-sonnet-5/DA10_A.py": [],
+  "anthropic_claude-sonnet-5/DA10_B.py": [],
+  "anthropic_claude-sonnet-5/DT11_A.py": [],
+  "anthropic_claude-sonnet-5/DT11_B.py": [],
+  "anthropic_claude-sonnet-5/DT12_A.py": [],
+  "anthropic_claude-sonnet-5/DT12_B.py": [],
+  "anthropic_claude-sonnet-5/ID01_A.py": [
+   "flask"
+  ],
+  "anthropic_claude-sonnet-5/ID01_B.py": [],
+  "anthropic_claude-sonnet-5/ID02_A.py": [
+   "flask"
+  ],
+  "anthropic_claude-sonnet-5/ID02_B.py": [],
+  "anthropic_claude-sonnet-5/ID03_A.py": [],
+  "anthropic_claude-sonnet-5/ID03_B.py": [],
+  "anthropic_claude-sonnet-5/ID04_A.py": [
+   "fastapi",
+   "pydantic",
+   "uvicorn"
+  ],
+  "anthropic_claude-sonnet-5/ID04_B.py": [],
+  "anthropic_claude-sonnet-5/ID05_A.py": [
+   "kafka"
+  ],
+  "anthropic_claude-sonnet-5/ID05_B.py": [],
+  "anthropic_claude-sonnet-5/ID06_A.py": [],
+  "anthropic_claude-sonnet-5/ID06_B.py": [],
+  "anthropic_claude-sonnet-5/ID07_A.py": [
+   "flask"
+  ],
+  "anthropic_claude-sonnet-5/ID07_B.py": [],
+  "anthropic_claude-sonnet-5/ID08_A.py": [],
+  "anthropic_claude-sonnet-5/ID08_B.py": [],
+  "anthropic_claude-sonnet-5/ID09_A.py": [],
+  "anthropic_claude-sonnet-5/ID09_B.py": [],
+  "anthropic_claude-sonnet-5/ID10_A.py": [],
+  "anthropic_claude-sonnet-5/ID10_B.py": [],
+  "anthropic_claude-sonnet-5/ID11_A.py": [
+   "requests"
+  ],
+  "anthropic_claude-sonnet-5/ID11_B.py": [],
+  "anthropic_claude-sonnet-5/ID12_A.py": [
+   "pika"
+  ],
+  "anthropic_claude-sonnet-5/ID12_B.py": [],
+  "anthropic_claude-sonnet-5/MO01_A.py": [],
+  "anthropic_claude-sonnet-5/MO01_B.py": [],
+  "anthropic_claude-sonnet-5/MO02_A.py": [],
+  "anthropic_claude-sonnet-5/MO02_B.py": [],
+  "anthropic_claude-sonnet-5/MO03_A.py": [],
+  "anthropic_claude-sonnet-5/MO03_B.py": [],
+  "anthropic_claude-sonnet-5/MO04_A.py": [],
+  "anthropic_claude-sonnet-5/MO04_B.py": [],
+  "anthropic_claude-sonnet-5/MO05_A.py": [],
+  "anthropic_claude-sonnet-5/MO05_B.py": [],
+  "anthropic_claude-sonnet-5/MO06_A.py": [],
+  "anthropic_claude-sonnet-5/MO06_B.py": [],
+  "anthropic_claude-sonnet-5/MO07_A.py": [],
+  "anthropic_claude-sonnet-5/MO07_B.py": [],
+  "anthropic_claude-sonnet-5/MO08_A.py": [],
+  "anthropic_claude-sonnet-5/MO08_B.py": [],
+  "anthropic_claude-sonnet-5/MO09_A.py": [],
+  "anthropic_claude-sonnet-5/MO09_B.py": [],
+  "anthropic_claude-sonnet-5/MO10_A.py": [],
+  "anthropic_claude-sonnet-5/MO10_B.py": [],
+  "anthropic_claude-sonnet-5/MO11_A.py": [],
+  "anthropic_claude-sonnet-5/MO11_B.py": [],
+  "anthropic_claude-sonnet-5/MO12_A.py": [],
+  "anthropic_claude-sonnet-5/MO12_B.py": [],
+  "deepseek_deepseek-v4-pro/AU01_A.py": [],
+  "deepseek_deepseek-v4-pro/AU01_B.py": [],
+  "deepseek_deepseek-v4-pro/AU02_A.py": [],
+  "deepseek_deepseek-v4-pro/AU02_B.py": [],
+  "deepseek_deepseek-v4-pro/AU03_A.py": [],
+  "deepseek_deepseek-v4-pro/AU03_B.py": [],
+  "deepseek_deepseek-v4-pro/AU04_A.py": [
+   "flask"
+  ],
+  "deepseek_deepseek-v4-pro/AU04_B.py": [],
+  "deepseek_deepseek-v4-pro/AU05_A.py": [],
+  "deepseek_deepseek-v4-pro/AU05_B.py": [],
+  "deepseek_deepseek-v4-pro/AU06_A.py": [
+   "flask"
+  ],
+  "deepseek_deepseek-v4-pro/AU06_B.py": [],
+  "deepseek_deepseek-v4-pro/AU07_A.py": [
+   "flask"
+  ],
+  "deepseek_deepseek-v4-pro/AU07_B.py": [],
+  "deepseek_deepseek-v4-pro/AU08_A.py": [
+   "flask"
+  ],
+  "deepseek_deepseek-v4-pro/AU08_B.py": [],
+  "deepseek_deepseek-v4-pro/AU09_A.py": [],
+  "deepseek_deepseek-v4-pro/AU09_B.py": [],
+  "deepseek_deepseek-v4-pro/AU10_A.py": [],
+  "deepseek_deepseek-v4-pro/AU10_B.py": [],
+  "deepseek_deepseek-v4-pro/AU11_A.py": [],
+  "deepseek_deepseek-v4-pro/AU11_B.py": [],
+  "deepseek_deepseek-v4-pro/AU12_A.py": [
+   "flask",
+   "werkzeug"
+  ],
+  "deepseek_deepseek-v4-pro/AU12_B.py": [],
+  "deepseek_deepseek-v4-pro/AU13_A.py": [
+   "flask"
+  ],
+  "deepseek_deepseek-v4-pro/AU13_B.py": [],
+  "deepseek_deepseek-v4-pro/AU14_A.py": [],
+  "deepseek_deepseek-v4-pro/AU14_B.py": [],
+  "deepseek_deepseek-v4-pro/DA01_A.py": [],
+  "deepseek_deepseek-v4-pro/DA01_B.py": [],
+  "deepseek_deepseek-v4-pro/DA02_A.py": [],
+  "deepseek_deepseek-v4-pro/DA02_B.py": [],
+  "deepseek_deepseek-v4-pro/DA03_A.py": [],
+  "deepseek_deepseek-v4-pro/DA03_B.py": [],
+  "deepseek_deepseek-v4-pro/DA04_A.py": [],
+  "deepseek_deepseek-v4-pro/DA04_B.py": [],
+  "deepseek_deepseek-v4-pro/DA05_A.py": [],
+  "deepseek_deepseek-v4-pro/DA05_B.py": [],
+  "deepseek_deepseek-v4-pro/DA06_A.py": [],
+  "deepseek_deepseek-v4-pro/DA06_B.py": [],
+  "deepseek_deepseek-v4-pro/DA07_A.py": [],
+  "deepseek_deepseek-v4-pro/DA07_B.py": [],
+  "deepseek_deepseek-v4-pro/DA08_A.py": [],
+  "deepseek_deepseek-v4-pro/DA08_B.py": [],
+  "deepseek_deepseek-v4-pro/DA09_A.py": [],
+  "deepseek_deepseek-v4-pro/DA09_B.py": [],
+  "deepseek_deepseek-v4-pro/DA10_A.py": [],
+  "deepseek_deepseek-v4-pro/DA10_B.py": [],
+  "deepseek_deepseek-v4-pro/DT11_A.py": [],
+  "deepseek_deepseek-v4-pro/DT11_B.py": [],
+  "deepseek_deepseek-v4-pro/DT12_A.py": [],
+  "deepseek_deepseek-v4-pro/DT12_B.py": [],
+  "deepseek_deepseek-v4-pro/ID01_A.py": [],
+  "deepseek_deepseek-v4-pro/ID01_B.py": [],
+  "deepseek_deepseek-v4-pro/ID02_A.py": [
+   "flask"
+  ],
+  "deepseek_deepseek-v4-pro/ID02_B.py": [],
+  "deepseek_deepseek-v4-pro/ID03_A.py": [],
+  "deepseek_deepseek-v4-pro/ID03_B.py": [],
+  "deepseek_deepseek-v4-pro/ID04_A.py": [
+   "fastapi",
+   "pydantic",
+   "uvicorn"
+  ],
+  "deepseek_deepseek-v4-pro/ID04_B.py": [],
+  "deepseek_deepseek-v4-pro/ID05_A.py": [
+   "confluent_kafka"
+  ],
+  "deepseek_deepseek-v4-pro/ID05_B.py": [],
+  "deepseek_deepseek-v4-pro/ID06_A.py": [],
+  "deepseek_deepseek-v4-pro/ID06_B.py": [],
+  "deepseek_deepseek-v4-pro/ID07_A.py": [
+   "flask",
+   "stripe"
+  ],
+  "deepseek_deepseek-v4-pro/ID07_B.py": [],
+  "deepseek_deepseek-v4-pro/ID08_A.py": [],
+  "deepseek_deepseek-v4-pro/ID08_B.py": [],
+  "deepseek_deepseek-v4-pro/ID09_A.py": [
+   "requests"
+  ],
+  "deepseek_deepseek-v4-pro/ID09_B.py": [],
+  "deepseek_deepseek-v4-pro/ID10_A.py": [
+   "kafka"
+  ],
+  "deepseek_deepseek-v4-pro/ID10_B.py": [],
+  "deepseek_deepseek-v4-pro/ID11_A.py": [
+   "requests"
+  ],
+  "deepseek_deepseek-v4-pro/ID11_B.py": [],
+  "deepseek_deepseek-v4-pro/ID12_A.py": [
+   "pika"
+  ],
+  "deepseek_deepseek-v4-pro/ID12_B.py": [],
+  "deepseek_deepseek-v4-pro/MO01_A.py": [],
+  "deepseek_deepseek-v4-pro/MO01_B.py": [],
+  "deepseek_deepseek-v4-pro/MO02_A.py": [],
+  "deepseek_deepseek-v4-pro/MO02_B.py": [],
+  "deepseek_deepseek-v4-pro/MO03_A.py": [],
+  "deepseek_deepseek-v4-pro/MO03_B.py": [],
+  "deepseek_deepseek-v4-pro/MO04_A.py": [],
+  "deepseek_deepseek-v4-pro/MO04_B.py": [],
+  "deepseek_deepseek-v4-pro/MO05_A.py": [],
+  "deepseek_deepseek-v4-pro/MO05_B.py": [],
+  "deepseek_deepseek-v4-pro/MO06_A.py": [],
+  "deepseek_deepseek-v4-pro/MO06_B.py": [],
+  "deepseek_deepseek-v4-pro/MO07_A.py": [],
+  "deepseek_deepseek-v4-pro/MO07_B.py": [],
+  "deepseek_deepseek-v4-pro/MO08_A.py": [],
+  "deepseek_deepseek-v4-pro/MO08_B.py": [],
+  "deepseek_deepseek-v4-pro/MO09_A.py": [],
+  "deepseek_deepseek-v4-pro/MO09_B.py": [],
+  "deepseek_deepseek-v4-pro/MO10_A.py": [],
+  "deepseek_deepseek-v4-pro/MO10_B.py": [],
+  "deepseek_deepseek-v4-pro/MO11_A.py": [],
+  "deepseek_deepseek-v4-pro/MO11_B.py": [],
+  "deepseek_deepseek-v4-pro/MO12_A.py": [],
+  "deepseek_deepseek-v4-pro/MO12_B.py": [],
+  "google_gemini-3.1-pro-preview/AU01_A.py": [],
+  "google_gemini-3.1-pro-preview/AU01_B.py": [],
+  "google_gemini-3.1-pro-preview/AU02_A.py": [],
+  "google_gemini-3.1-pro-preview/AU02_B.py": [],
+  "google_gemini-3.1-pro-preview/AU03_A.py": [
+   "fastapi",
+   "starlette",
+   "uvicorn"
+  ],
+  "google_gemini-3.1-pro-preview/AU03_B.py": [],
+  "google_gemini-3.1-pro-preview/AU04_A.py": [
+   "flask"
+  ],
+  "google_gemini-3.1-pro-preview/AU04_B.py": [],
+  "google_gemini-3.1-pro-preview/AU05_A.py": [],
+  "google_gemini-3.1-pro-preview/AU05_B.py": [],
+  "google_gemini-3.1-pro-preview/AU06_A.py": [
+   "flask"
+  ],
+  "google_gemini-3.1-pro-preview/AU06_B.py": [],
+  "google_gemini-3.1-pro-preview/AU07_A.py": [
+   "flask"
+  ],
+  "google_gemini-3.1-pro-preview/AU07_B.py": [],
+  "google_gemini-3.1-pro-preview/AU08_A.py": [
+   "fastapi",
+   "pydantic",
+   "uvicorn"
+  ],
+  "google_gemini-3.1-pro-preview/AU08_B.py": [],
+  "google_gemini-3.1-pro-preview/AU09_A.py": [
+   "flask"
+  ],
+  "google_gemini-3.1-pro-preview/AU09_B.py": [],
+  "google_gemini-3.1-pro-preview/AU10_A.py": [],
+  "google_gemini-3.1-pro-preview/AU10_B.py": [],
+  "google_gemini-3.1-pro-preview/AU11_A.py": [],
+  "google_gemini-3.1-pro-preview/AU11_B.py": [],
+  "google_gemini-3.1-pro-preview/AU12_A.py": [
+   "flask",
+   "werkzeug"
+  ],
+  "google_gemini-3.1-pro-preview/AU12_B.py": [],
+  "google_gemini-3.1-pro-preview/AU13_A.py": [
+   "fastapi",
+   "uvicorn"
+  ],
+  "google_gemini-3.1-pro-preview/AU13_B.py": [],
+  "google_gemini-3.1-pro-preview/AU14_A.py": [],
+  "google_gemini-3.1-pro-preview/AU14_B.py": [],
+  "google_gemini-3.1-pro-preview/DA01_A.py": [],
+  "google_gemini-3.1-pro-preview/DA01_B.py": [],
+  "google_gemini-3.1-pro-preview/DA02_A.py": [],
+  "google_gemini-3.1-pro-preview/DA02_B.py": [],
+  "google_gemini-3.1-pro-preview/DA03_A.py": [],
+  "google_gemini-3.1-pro-preview/DA03_B.py": [],
+  "google_gemini-3.1-pro-preview/DA04_A.py": [],
+  "google_gemini-3.1-pro-preview/DA04_B.py": [],
+  "google_gemini-3.1-pro-preview/DA05_A.py": [],
+  "google_gemini-3.1-pro-preview/DA05_B.py": [],
+  "google_gemini-3.1-pro-preview/DA06_A.py": [],
+  "google_gemini-3.1-pro-preview/DA06_B.py": [],
+  "google_gemini-3.1-pro-preview/DA07_A.py": [],
+  "google_gemini-3.1-pro-preview/DA07_B.py": [],
+  "google_gemini-3.1-pro-preview/DA08_A.py": [],
+  "google_gemini-3.1-pro-preview/DA08_B.py": [],
+  "google_gemini-3.1-pro-preview/DA09_A.py": [],
+  "google_gemini-3.1-pro-preview/DA09_B.py": [],
+  "google_gemini-3.1-pro-preview/DA10_A.py": [],
+  "google_gemini-3.1-pro-preview/DA10_B.py": [],
+  "google_gemini-3.1-pro-preview/DT11_A.py": [],
+  "google_gemini-3.1-pro-preview/DT11_B.py": [],
+  "google_gemini-3.1-pro-preview/DT12_A.py": [],
+  "google_gemini-3.1-pro-preview/DT12_B.py": [],
+  "google_gemini-3.1-pro-preview/ID01_A.py": [
+   "flask"
+  ],
+  "google_gemini-3.1-pro-preview/ID01_B.py": [],
+  "google_gemini-3.1-pro-preview/ID02_A.py": [],
+  "google_gemini-3.1-pro-preview/ID02_B.py": [],
+  "google_gemini-3.1-pro-preview/ID03_A.py": [],
+  "google_gemini-3.1-pro-preview/ID03_B.py": [],
+  "google_gemini-3.1-pro-preview/ID04_A.py": [
+   "fastapi",
+   "pydantic",
+   "uvicorn"
+  ],
+  "google_gemini-3.1-pro-preview/ID04_B.py": [],
+  "google_gemini-3.1-pro-preview/ID05_A.py": [],
+  "google_gemini-3.1-pro-preview/ID05_B.py": [],
+  "google_gemini-3.1-pro-preview/ID06_A.py": [],
+  "google_gemini-3.1-pro-preview/ID06_B.py": [],
+  "google_gemini-3.1-pro-preview/ID07_A.py": [
+   "flask"
+  ],
+  "google_gemini-3.1-pro-preview/ID07_B.py": [],
+  "google_gemini-3.1-pro-preview/ID08_A.py": [],
+  "google_gemini-3.1-pro-preview/ID08_B.py": [],
+  "google_gemini-3.1-pro-preview/ID09_A.py": [],
+  "google_gemini-3.1-pro-preview/ID09_B.py": [],
+  "google_gemini-3.1-pro-preview/ID10_A.py": [],
+  "google_gemini-3.1-pro-preview/ID10_B.py": [],
+  "google_gemini-3.1-pro-preview/ID11_A.py": [
+   "requests"
+  ],
+  "google_gemini-3.1-pro-preview/ID11_B.py": [],
+  "google_gemini-3.1-pro-preview/ID12_A.py": [
+   "pika"
+  ],
+  "google_gemini-3.1-pro-preview/ID12_B.py": [],
+  "google_gemini-3.1-pro-preview/MO01_A.py": [],
+  "google_gemini-3.1-pro-preview/MO01_B.py": [],
+  "google_gemini-3.1-pro-preview/MO02_A.py": [],
+  "google_gemini-3.1-pro-preview/MO02_B.py": [],
+  "google_gemini-3.1-pro-preview/MO03_A.py": [],
+  "google_gemini-3.1-pro-preview/MO03_B.py": [],
+  "google_gemini-3.1-pro-preview/MO04_A.py": [],
+  "google_gemini-3.1-pro-preview/MO04_B.py": [],
+  "google_gemini-3.1-pro-preview/MO05_A.py": [],
+  "google_gemini-3.1-pro-preview/MO05_B.py": [],
+  "google_gemini-3.1-pro-preview/MO06_A.py": [],
+  "google_gemini-3.1-pro-preview/MO06_B.py": [],
+  "google_gemini-3.1-pro-preview/MO07_A.py": [],
+  "google_gemini-3.1-pro-preview/MO07_B.py": [],
+  "google_gemini-3.1-pro-preview/MO08_A.py": [],
+  "google_gemini-3.1-pro-preview/MO08_B.py": [],
+  "google_gemini-3.1-pro-preview/MO09_A.py": [],
+  "google_gemini-3.1-pro-preview/MO09_B.py": [],
+  "google_gemini-3.1-pro-preview/MO10_A.py": [],
+  "google_gemini-3.1-pro-preview/MO10_B.py": [],
+  "google_gemini-3.1-pro-preview/MO11_A.py": [],
+  "google_gemini-3.1-pro-preview/MO11_B.py": [],
+  "google_gemini-3.1-pro-preview/MO12_A.py": [],
+  "google_gemini-3.1-pro-preview/MO12_B.py": [],
+  "groq_qwen-qwen3.8-27b/AU01_A.py": [],
+  "groq_qwen-qwen3.8-27b/AU01_B.py": [],
+  "groq_qwen-qwen3.8-27b/AU02_A.py": [],
+  "groq_qwen-qwen3.8-27b/AU02_B.py": [],
+  "groq_qwen-qwen3.8-27b/AU03_A.py": [
+   "flask"
+  ],
+  "groq_qwen-qwen3.8-27b/AU03_B.py": [],
+  "groq_qwen-qwen3.8-27b/AU04_A.py": [
+   "flask"
+  ],
+  "groq_qwen-qwen3.8-27b/AU04_B.py": [],
+  "groq_qwen-qwen3.8-27b/AU05_A.py": [],
+  "groq_qwen-qwen3.8-27b/AU05_B.py": [],
+  "groq_qwen-qwen3.8-27b/AU06_A.py": [
+   "flask"
+  ],
+  "groq_qwen-qwen3.8-27b/AU06_B.py": [],
+  "groq_qwen-qwen3.8-27b/AU07_A.py": [
+   "flask"
+  ],
+  "groq_qwen-qwen3.8-27b/AU07_B.py": [],
+  "groq_qwen-qwen3.8-27b/AU08_A.py": [
+   "fastapi",
+   "pydantic"
+  ],
+  "groq_qwen-qwen3.8-27b/AU08_B.py": [],
+  "groq_qwen-qwen3.8-27b/AU09_A.py": [],
+  "groq_qwen-qwen3.8-27b/AU09_B.py": [],
+  "groq_qwen-qwen3.8-27b/AU10_A.py": [],
+  "groq_qwen-qwen3.8-27b/AU10_B.py": [],
+  "groq_qwen-qwen3.8-27b/AU11_A.py": [],
+  "groq_qwen-qwen3.8-27b/AU11_B.py": [],
+  "groq_qwen-qwen3.8-27b/AU12_A.py": [
+   "flask",
+   "flask_sqlalchemy",
+   "werkzeug"
+  ],
+  "groq_qwen-qwen3.8-27b/AU12_B.py": [],
+  "groq_qwen-qwen3.8-27b/AU13_A.py": [
+   "flask"
+  ],
+  "groq_qwen-qwen3.8-27b/AU13_B.py": [],
+  "groq_qwen-qwen3.8-27b/AU14_A.py": [],
+  "groq_qwen-qwen3.8-27b/AU14_B.py": [],
+  "groq_qwen-qwen3.8-27b/DA01_A.py": [],
+  "groq_qwen-qwen3.8-27b/DA01_B.py": [],
+  "groq_qwen-qwen3.8-27b/DA02_A.py": [],
+  "groq_qwen-qwen3.8-27b/DA02_B.py": [],
+  "groq_qwen-qwen3.8-27b/DA03_A.py": [],
+  "groq_qwen-qwen3.8-27b/DA03_B.py": [],
+  "groq_qwen-qwen3.8-27b/DA04_A.py": [],
+  "groq_qwen-qwen3.8-27b/DA04_B.py": [],
+  "groq_qwen-qwen3.8-27b/DA05_A.py": [],
+  "groq_qwen-qwen3.8-27b/DA05_B.py": [],
+  "groq_qwen-qwen3.8-27b/DA06_A.py": [],
+  "groq_qwen-qwen3.8-27b/DA06_B.py": [],
+  "groq_qwen-qwen3.8-27b/DA07_A.py": [],
+  "groq_qwen-qwen3.8-27b/DA07_B.py": [],
+  "groq_qwen-qwen3.8-27b/DA08_A.py": [],
+  "groq_qwen-qwen3.8-27b/DA08_B.py": [],
+  "groq_qwen-qwen3.8-27b/DA09_A.py": [],
+  "groq_qwen-qwen3.8-27b/DA09_B.py": [],
+  "groq_qwen-qwen3.8-27b/DA10_A.py": [],
+  "groq_qwen-qwen3.8-27b/DA10_B.py": [],
+  "groq_qwen-qwen3.8-27b/DT11_A.py": [],
+  "groq_qwen-qwen3.8-27b/DT11_B.py": [],
+  "groq_qwen-qwen3.8-27b/DT12_A.py": [],
+  "groq_qwen-qwen3.8-27b/DT12_B.py": [],
+  "groq_qwen-qwen3.8-27b/ID01_A.py": [],
+  "groq_qwen-qwen3.8-27b/ID01_B.py": [],
+  "groq_qwen-qwen3.8-27b/ID02_A.py": [],
+  "groq_qwen-qwen3.8-27b/ID02_B.py": [],
+  "groq_qwen-qwen3.8-27b/ID03_A.py": [],
+  "groq_qwen-qwen3.8-27b/ID03_B.py": [],
+  "groq_qwen-qwen3.8-27b/ID04_A.py": [
+   "fastapi",
+   "pydantic"
+  ],
+  "groq_qwen-qwen3.8-27b/ID04_B.py": [],
+  "groq_qwen-qwen3.8-27b/ID05_A.py": [],
+  "groq_qwen-qwen3.8-27b/ID05_B.py": [],
+  "groq_qwen-qwen3.8-27b/ID06_A.py": [],
+  "groq_qwen-qwen3.8-27b/ID06_B.py": [],
+  "groq_qwen-qwen3.8-27b/ID07_A.py": [],
+  "groq_qwen-qwen3.8-27b/ID07_B.py": [],
+  "groq_qwen-qwen3.8-27b/ID08_A.py": [],
+  "groq_qwen-qwen3.8-27b/ID08_B.py": [],
+  "groq_qwen-qwen3.8-27b/ID09_A.py": [],
+  "groq_qwen-qwen3.8-27b/ID09_B.py": [],
+  "groq_qwen-qwen3.8-27b/ID10_A.py": [],
+  "groq_qwen-qwen3.8-27b/ID10_B.py": [],
+  "groq_qwen-qwen3.8-27b/ID11_A.py": [
+   "requests"
+  ],
+  "groq_qwen-qwen3.8-27b/ID11_B.py": [],
+  "groq_qwen-qwen3.8-27b/ID12_A.py": [],
+  "groq_qwen-qwen3.8-27b/ID12_B.py": [],
+  "groq_qwen-qwen3.8-27b/MO01_A.py": [],
+  "groq_qwen-qwen3.8-27b/MO01_B.py": [],
+  "groq_qwen-qwen3.8-27b/MO02_A.py": [],
+  "groq_qwen-qwen3.8-27b/MO02_B.py": [],
+  "groq_qwen-qwen3.8-27b/MO03_A.py": [],
+  "groq_qwen-qwen3.8-27b/MO03_B.py": [],
+  "groq_qwen-qwen3.8-27b/MO04_A.py": [],
+  "groq_qwen-qwen3.8-27b/MO04_B.py": [],
+  "groq_qwen-qwen3.8-27b/MO05_A.py": [],
+  "groq_qwen-qwen3.8-27b/MO05_B.py": [],
+  "groq_qwen-qwen3.8-27b/MO06_A.py": [],
+  "groq_qwen-qwen3.8-27b/MO06_B.py": [],
+  "groq_qwen-qwen3.8-27b/MO07_A.py": [],
+  "groq_qwen-qwen3.8-27b/MO07_B.py": [],
+  "groq_qwen-qwen3.8-27b/MO08_A.py": [],
+  "groq_qwen-qwen3.8-27b/MO08_B.py": [],
+  "groq_qwen-qwen3.8-27b/MO09_A.py": [],
+  "groq_qwen-qwen3.8-27b/MO09_B.py": [],
+  "groq_qwen-qwen3.8-27b/MO10_A.py": [],
+  "groq_qwen-qwen3.8-27b/MO10_B.py": [],
+  "groq_qwen-qwen3.8-27b/MO11_A.py": [],
+  "groq_qwen-qwen3.8-27b/MO11_B.py": [],
+  "groq_qwen-qwen3.8-27b/MO12_A.py": [],
+  "groq_qwen-qwen3.8-27b/MO12_B.py": [],
+  "openai_gpt-5.6-sol/AU01_A.py": [],
+  "openai_gpt-5.6-sol/AU01_B.py": [],
+  "openai_gpt-5.6-sol/AU02_A.py": [],
+  "openai_gpt-5.6-sol/AU02_B.py": [],
+  "openai_gpt-5.6-sol/AU03_A.py": [
+   "fastapi",
+   "uvicorn"
+  ],
+  "openai_gpt-5.6-sol/AU03_B.py": [],
+  "openai_gpt-5.6-sol/AU04_A.py": [
+   "flask"
+  ],
+  "openai_gpt-5.6-sol/AU04_B.py": [],
+  "openai_gpt-5.6-sol/AU05_A.py": [],
+  "openai_gpt-5.6-sol/AU05_B.py": [],
+  "openai_gpt-5.6-sol/AU06_A.py": [
+   "flask"
+  ],
+  "openai_gpt-5.6-sol/AU06_B.py": [],
+  "openai_gpt-5.6-sol/AU07_A.py": [
+   "flask"
+  ],
+  "openai_gpt-5.6-sol/AU07_B.py": [],
+  "openai_gpt-5.6-sol/AU08_A.py": [
+   "fastapi",
+   "pydantic",
+   "uvicorn"
+  ],
+  "openai_gpt-5.6-sol/AU08_B.py": [],
+  "openai_gpt-5.6-sol/AU09_A.py": [
+   "flask",
+   "werkzeug"
+  ],
+  "openai_gpt-5.6-sol/AU09_B.py": [],
+  "openai_gpt-5.6-sol/AU10_A.py": [],
+  "openai_gpt-5.6-sol/AU10_B.py": [],
+  "openai_gpt-5.6-sol/AU11_A.py": [],
+  "openai_gpt-5.6-sol/AU11_B.py": [],
+  "openai_gpt-5.6-sol/AU12_A.py": [
+   "flask",
+   "werkzeug"
+  ],
+  "openai_gpt-5.6-sol/AU12_B.py": [],
+  "openai_gpt-5.6-sol/AU13_A.py": [
+   "fastapi",
+   "uvicorn"
+  ],
+  "openai_gpt-5.6-sol/AU13_B.py": [],
+  "openai_gpt-5.6-sol/AU14_A.py": [],
+  "openai_gpt-5.6-sol/AU14_B.py": [],
+  "openai_gpt-5.6-sol/DA01_A.py": [],
+  "openai_gpt-5.6-sol/DA01_B.py": [],
+  "openai_gpt-5.6-sol/DA02_A.py": [],
+  "openai_gpt-5.6-sol/DA02_B.py": [],
+  "openai_gpt-5.6-sol/DA03_A.py": [],
+  "openai_gpt-5.6-sol/DA03_B.py": [],
+  "openai_gpt-5.6-sol/DA04_A.py": [],
+  "openai_gpt-5.6-sol/DA04_B.py": [],
+  "openai_gpt-5.6-sol/DA05_A.py": [],
+  "openai_gpt-5.6-sol/DA05_B.py": [],
+  "openai_gpt-5.6-sol/DA06_A.py": [],
+  "openai_gpt-5.6-sol/DA06_B.py": [],
+  "openai_gpt-5.6-sol/DA07_A.py": [],
+  "openai_gpt-5.6-sol/DA07_B.py": [],
+  "openai_gpt-5.6-sol/DA08_A.py": [],
+  "openai_gpt-5.6-sol/DA08_B.py": [],
+  "openai_gpt-5.6-sol/DA09_A.py": [],
+  "openai_gpt-5.6-sol/DA09_B.py": [],
+  "openai_gpt-5.6-sol/DA10_A.py": [],
+  "openai_gpt-5.6-sol/DA10_B.py": [],
+  "openai_gpt-5.6-sol/DT11_A.py": [],
+  "openai_gpt-5.6-sol/DT11_B.py": [],
+  "openai_gpt-5.6-sol/DT12_A.py": [],
+  "openai_gpt-5.6-sol/DT12_B.py": [],
+  "openai_gpt-5.6-sol/ID01_A.py": [],
+  "openai_gpt-5.6-sol/ID01_B.py": [],
+  "openai_gpt-5.6-sol/ID02_A.py": [],
+  "openai_gpt-5.6-sol/ID02_B.py": [],
+  "openai_gpt-5.6-sol/ID03_A.py": [
+   "boto3",
+   "botocore"
+  ],
+  "openai_gpt-5.6-sol/ID03_B.py": [],
+  "openai_gpt-5.6-sol/ID04_A.py": [
+   "fastapi",
+   "pydantic",
+   "uvicorn"
+  ],
+  "openai_gpt-5.6-sol/ID04_B.py": [],
+  "openai_gpt-5.6-sol/ID05_A.py": [
+   "confluent_kafka"
+  ],
+  "openai_gpt-5.6-sol/ID05_B.py": [],
+  "openai_gpt-5.6-sol/ID06_A.py": [],
+  "openai_gpt-5.6-sol/ID06_B.py": [],
+  "openai_gpt-5.6-sol/ID07_A.py": [],
+  "openai_gpt-5.6-sol/ID07_B.py": [],
+  "openai_gpt-5.6-sol/ID08_A.py": [],
+  "openai_gpt-5.6-sol/ID08_B.py": [],
+  "openai_gpt-5.6-sol/ID09_A.py": [],
+  "openai_gpt-5.6-sol/ID09_B.py": [],
+  "openai_gpt-5.6-sol/ID10_A.py": [
+   "confluent_kafka",
+   "psycopg"
+  ],
+  "openai_gpt-5.6-sol/ID10_B.py": [],
+  "openai_gpt-5.6-sol/ID11_A.py": [],
+  "openai_gpt-5.6-sol/ID11_B.py": [],
+  "openai_gpt-5.6-sol/ID12_A.py": [
+   "pika"
+  ],
+  "openai_gpt-5.6-sol/ID12_B.py": [],
+  "openai_gpt-5.6-sol/MO01_A.py": [],
+  "openai_gpt-5.6-sol/MO01_B.py": [],
+  "openai_gpt-5.6-sol/MO02_A.py": [],
+  "openai_gpt-5.6-sol/MO02_B.py": [],
+  "openai_gpt-5.6-sol/MO03_A.py": [],
+  "openai_gpt-5.6-sol/MO03_B.py": [],
+  "openai_gpt-5.6-sol/MO04_A.py": [],
+  "openai_gpt-5.6-sol/MO04_B.py": [],
+  "openai_gpt-5.6-sol/MO05_A.py": [],
+  "openai_gpt-5.6-sol/MO05_B.py": [],
+  "openai_gpt-5.6-sol/MO06_A.py": [],
+  "openai_gpt-5.6-sol/MO06_B.py": [],
+  "openai_gpt-5.6-sol/MO07_A.py": [],
+  "openai_gpt-5.6-sol/MO07_B.py": [],
+  "openai_gpt-5.6-sol/MO08_A.py": [],
+  "openai_gpt-5.6-sol/MO08_B.py": [],
+  "openai_gpt-5.6-sol/MO09_A.py": [],
+  "openai_gpt-5.6-sol/MO09_B.py": [],
+  "openai_gpt-5.6-sol/MO10_A.py": [],
+  "openai_gpt-5.6-sol/MO10_B.py": [],
+  "openai_gpt-5.6-sol/MO11_A.py": [],
+  "openai_gpt-5.6-sol/MO11_B.py": [],
+  "openai_gpt-5.6-sol/MO12_A.py": [],
+  "openai_gpt-5.6-sol/MO12_B.py": []
+ }
+}

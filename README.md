@@ -1,6 +1,6 @@
 # Delta: Closing the Specification Gap — Code Repository
 
-**The measured evidence for spec-driven development.** A pre-registered, five-model paired test of a one-page specification frame on AI-generated code: findings fell from 148 to 23, every model improved, none regressed. All 500 outputs public: [doi.org/10.5281/zenodo.22598205](https://doi.org/10.5281/zenodo.22598205) · [Hugging Face mirror](https://huggingface.co/datasets/sandeepdhuriauthor/delta-frame-validation-study) · [The Specification Frame](https://acuity.press/specification-frame.html) · [The ten laws](https://acuity.press/laws/)
+**The measured evidence for spec-driven development.** A pre-registered, five-model paired test of a one-page specification frame on AI-generated code: findings fell from 148 to 23, every model improved, none regressed. Paper: [arXiv:2609.23270](https://arxiv.org/abs/2609.23270). All 500 outputs public: [doi.org/10.5281/zenodo.22598204](https://doi.org/10.5281/zenodo.22598204) (all versions) · [Hugging Face mirror](https://huggingface.co/datasets/sandeepdhuriauthor/delta-frame-validation-study) · [The Specification Frame](https://acuity.press/specification-frame.html) · [The ten laws](https://acuity.press/laws/)
 
 ![148 findings bare, 23 with the Frame](readme_hero.png)
 
@@ -22,6 +22,17 @@ All compilable code examples, prompt templates, and CLAUDE.md configuration file
 ![PRs welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)
 
 > Companion code for the book *Delta: Closing the Specification Gap*. The examples are **illustrative and educational** — minimal and pedagogical, not drop-in production libraries. Read [SECURITY.md](SECURITY.md) and [CONTRIBUTING.md](CONTRIBUTING.md) before using or contributing.
+
+## Evidence
+
+A pre-registered, five-model paired evaluation of the Specification Frame (September 2026): 50 regulated-domain tasks, each generated bare and with the Frame, 500 outputs. Defects in nine named classes fell from 148 to 23. Every model improved, none got worse, and Bandit, run independently, moved from 53 issues to 11.
+
+- Paper: [arXiv:2609.23270](https://arxiv.org/abs/2609.23270) · preprint record, all versions: https://doi.org/10.5281/zenodo.22830262
+- Dataset, all versions (v1.1 current): https://doi.org/10.5281/zenodo.22598204 · IEEE DataPort mirror: https://doi.org/10.21227/7048-vw70 · Hugging Face mirror: https://huggingface.co/datasets/sandeepdhuriauthor/delta-frame-validation-study
+- Dependency surface of the 500 outputs (`analysis/dependencies/`): seventeen third-party import names, all on PyPI, no hallucinated package. Third-party imports appear in 65 of the 250 bare outputs and in 0 of the 250 framed outputs. Note: https://acuity.press/writing/dependency-surface/
+- Follow-on study, pre-registered October 2026: the agent study, rules files on five coding agents. https://doi.org/10.5281/zenodo.23308037
+- Page: https://acuity.press/data/
+- Author: Sandeep Dhuri, ORCID 0009-0008-1829-2431, Google Scholar https://scholar.google.com/citations?user=2HJo8sMAAAAJ
 
 ## Quick start (60 seconds, no project setup)
 

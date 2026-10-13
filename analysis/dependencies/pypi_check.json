@@ -1,0 +1,96 @@
+{
+ "checked": "2026-10-06",
+ "registry": "https://pypi.org/pypi/<distribution>/json",
+ "first_check": "2026-09-29",
+ "third_party": {
+  "flask": {
+   "distribution": "flask",
+   "files": 36,
+   "exists_on_pypi": true
+  },
+  "requests": {
+   "distribution": "requests",
+   "files": 5,
+   "exists_on_pypi": true
+  },
+  "fastapi": {
+   "distribution": "fastapi",
+   "files": 13,
+   "exists_on_pypi": true
+  },
+  "pydantic": {
+   "distribution": "pydantic",
+   "files": 8,
+   "exists_on_pypi": true
+  },
+  "flask_sqlalchemy": {
+   "distribution": "Flask-SQLAlchemy",
+   "files": 2,
+   "exists_on_pypi": true
+  },
+  "werkzeug": {
+   "distribution": "werkzeug",
+   "files": 9,
+   "exists_on_pypi": true
+  },
+  "uvicorn": {
+   "distribution": "uvicorn",
+   "files": 11,
+   "exists_on_pypi": true
+  },
+  "starlette": {
+   "distribution": "starlette",
+   "files": 2,
+   "exists_on_pypi": true
+  },
+  "pika": {
+   "distribution": "pika",
+   "files": 4,
+   "exists_on_pypi": true
+  },
+  "kafka": {
+   "distribution": "kafka-python",
+   "files": 2,
+   "exists_on_pypi": true
+  },
+  "confluent_kafka": {
+   "distribution": "confluent-kafka",
+   "files": 3,
+   "exists_on_pypi": true
+  },
+  "stripe": {
+   "distribution": "stripe",
+   "files": 1,
+   "exists_on_pypi": true
+  },
+  "flask_login": {
+   "distribution": "Flask-Login",
+   "files": 1,
+   "exists_on_pypi": true
+  },
+  "bcrypt": {
+   "distribution": "bcrypt",
+   "files": 1,
+   "exists_on_pypi": true
+  },
+  "boto3": {
+   "distribution": "boto3",
+   "files": 1,
+   "exists_on_pypi": true
+  },
+  "botocore": {
+   "distribution": "botocore",
+   "files": 1,
+   "exists_on_pypi": true
+  },
+  "psycopg": {
+   "distribution": "psycopg",
+   "files": 1,
+   "exists_on_pypi": true
+  }
+ },
+ "files_with_third_party_by_arm": {
+  "A": 65
+ },
+ "hallucinated": []
+}

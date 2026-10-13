@@ -1,6 +1,6 @@
 {
  "ruleset": "delta-laws",
- "version": "0.3.0",
+ "version": "0.3.1",
  "source": {
   "title": "Delta: Closing the Specification Gap",
   "author": "Sandeep Dhuri",
@@ -40,10 +40,8 @@
    "number": 2,
    "name": "Time carries its zone",
    "statement": "All datetimes are timezone-aware UTC. Naive datetimes are forbidden.",
-   "rationale": "Naive timestamps in business logic silently shift across zones and daylight-saving boundaries.",
-   "related_cwe": [
-    "CWE-1339"
-   ],
+   "rationale": "Naive timestamps in business logic silently shift across zones and daylight-saving boundaries. No single CWE covers timezone-naive time; the closest parent is CWE-682 (incorrect calculation).",
+   "related_cwe": [],
    "machine_checkable": true,
    "violation_example": {
     "python": "now = datetime.now()"
